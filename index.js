@@ -25,7 +25,7 @@ var funnyCase = (string) => {
   
   var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   
-  var doubled = map(numbers, function(element) {
+  var doubled = map(numbers, (element) => {
     return element * 2;
   });
   
@@ -46,7 +46,7 @@ var funnyCase = (string) => {
     return result;
   };
   
-  var evenNumbers = filter(numbers, function(currentElement) {
+  var evenNumbers = filter(numbers, (currentElement) => {
     return currentElement % 2 === 0;
   });
   
