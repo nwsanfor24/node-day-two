@@ -43,15 +43,15 @@ console.log(brother2); // <= Rickon Stark
 const characters = ["Ned Stark", "The Quiet Wolf", "House Stark"];
 
 // CODE BELOW HERE
-const [name, alias, allegiance] = characters;
+const [name, alias, ally] = characters;
 
-console.log(name, alias, allegiance);
+console.log(name, alias, ally);
 
 
 // 4. Strings
 const skills = 'The Usurper, male, Baratheon, Cersei';
 
 // CODE BELOW HERE
-const [alias, gender, family, spouse] = skills.split(",");
+const [identity, gender, family, spouse] = skills.split(",");
 
-console.log(alias, gender, family, spouse); // print them by variable name
+console.log(identity, gender, family, spouse); // print them by variable name
