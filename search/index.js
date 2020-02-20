@@ -1,7 +1,8 @@
 // 1. Copy the songs array into another array using spread and console.log what it returns.
 const songs = ["Creep", "Everlong", "Bulls On Parade", "Song 2", "What I Got"];
 
-
+const songsSpread = [...songs];
+console.log(songsSpread);
 
 // 2.  Modify the add function so that is uses the rest operator and maintains the same functionality. 
 // You should still be able to pass in any number of arguments. Run the code first in your console to see the functionality.
@@ -13,3 +14,12 @@ function addition(x, y, z) {
 console.log(addition(1, 2, 3)); // 6
 
 // code below here
+
+function addition(...array) {
+    return array.reduce((a, b) => a + b, 0);
+}
+
+console.log(addition(5, 5));
+console.log(addition(10, 15, 20));
+console.log(addition(1, 1, 2, 3));  
+
