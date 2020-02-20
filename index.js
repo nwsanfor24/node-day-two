@@ -4,7 +4,7 @@ let score;
 let targetScore;
 
 const makeGuess = () => {
-  let $score = document.querySelector("#root p");
+  const $score = document.querySelector("#root p");
   $score.textContent = "Score: " + score + " | " + "Target: " + targetScore;
 
   if (score > targetScore) {
@@ -38,9 +38,9 @@ Crystal.prototype.render = function(target) {
 
 const crystals = [new Crystal("red"), new Crystal("blue"), new Crystal("green")];
 
-const playRound = function() {
-  let fragment = document.createDocumentFragment();
-  let $score = document.createElement("p");
+const playRound = () => {
+  const fragment = document.createDocumentFragment();
+  const $score = document.createElement("p");
   targetScore = Math.floor(Math.random() * 50) + 25;
   score = 0;
   $score.textContent = "Score: " + score + " | " + "Target: " + targetScore;
